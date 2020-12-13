@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <title>Tu Amigo en Venezuela</title>
+        <link rel="stylesheet" href="main.css" type="text/css" />
+        <link rel="icon" type="image/vnd.microsoft.icon" href="images/TAV.ico" sizes="16x16 24x24 36x36 48x48">
+    </head>
+    <body>
+        <div>
+            <ul class="menu">
+                <li id="index"><a href="index.html"><img src="images/TAV.png" alt="TAV" width="110" height="60" class="img" /></a></li>
+                <div class="dropdown">
+                    <li class="mlk"><button>Servicios</button></li>
+                        <div class="dropdown-content">
+                            <a href="quotation.html">Express</a>
+                            <a href="#">Remesas TAV</a>
+                            <a href="#">Integral</a>
+                        </div>
+                </div>
+                <div class="dropdown">
+                    <li class="mlk"><button>Paquetes</button></li>
+                        <div class="dropdown-content">
+                            <a href="#">Hoteleria</a>
+                            <a href="#">Automovil</a>
+                            <a href="#">Todo en Uno</a>
+                        </div>
+                </div>
+                <div class="dropdown">
+                    <li class="mlk"><button>Conócenos</button></li>
+                        <div class="dropdown-content">
+                            <a href="#">¿Quiénes somos?</a>
+                            <a href="#">¿Dónde estamos?</a>
+                            <a href="#">¡Contacto!</a>
+                        </div>
+                </div>
+            </ul>
+        </div>
+        <div class="content">
+            <div>
+                <span class="title">Cotización Express</span>
+            </div>                                                                                      
+            <div class="form">
+                <fieldset id="noborder">
+                    <div>
+                        <p class="subtitle">Información de Vuelo</p>
+                        <form action="summary.html">
+                            <div class="font">
+                                <label>Fecha de Ida:</label>
+                                &nbsp;&nbsp;<input type="date" min="2020-10-23" max="2100-12-31" step="1">
+                                <br />
+                                <br />
+                                <label>Salida:</label>                                                                          
+                                <input />
+                                &nbsp;&nbsp;                            <label>Destino:</label>
+                                <input />
+                                <br />
+                                <br />
+                                <label>Adultos:</label>
+                                <input type="number" min="0" max="10">
+                                &nbsp;&nbsp;<label>Niños:</label>
+                                <input type="number" min="0" max="10">
+                                &nbsp;&nbsp;<label>Bebés:</label>
+                                <input type="number" min="0" max="10">
+                                <br />
+                                <br />
+                            </div>    
+                            <p class="subtitle">Información de Contacto</p>
+                            <div class="font">
+                                &nbsp;<label>Nombre:</label>
+                                <input type="text" id="Name" name="Name" placeholder="Nombre" />
+                                &nbsp;&nbsp;<label>Apellido:</label>
+                                <input type="text" id="Name" name="Surname" placeholder="Apellido" />
+                                &nbsp;&nbsp;<label>Email:</label>
+                                <input type="email" id="Email" name="Email" placeholder="Correo" />
+                                <br />
+                                <br />
+                                <div>
+                                    <span>Teléfono:</span>
+                                    <label>Cod. de Área:</label>
+                                    <input type="number" min="1" max="99">
+                                    &nbsp;&nbsp;<label>Número:</label>
+                                    &nbsp;<input type="tel">
+                                </div>
+                                <br />
+                            </div>
+                    </div>    
+                    <div>
+                            <textarea placeholder="Observaciones..." class="txtarea"></textarea>
+                    </div>
+                    <div class="center">
+                            <br />
+                            <button class="btn">Enviar Cotización</button>
+                            <a class="lkbtn" href="index.html">Limpiar</a>
+                        </form>
+                    </div>    
+                </fieldset>
+            </div>
+        </div>
+    </body>
+</html>

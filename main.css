@@ -1,0 +1,260 @@
+@font-face{ 
+	font-family: "Monaco";
+    src: url("fonts/Monaco.ttf") format("truetype");
+}
+
+@font-face{ 
+	font-family: "Americana";
+    src: url("fonts/Americana.ttf") format("truetype");
+}
+
+@font-face{ 
+	font-family: "Roboto";
+    src: url("fonts/Roboto.ttf") format("truetype");
+}
+
+body {
+    background-color: #eee;
+    margin: auto;
+    padding: 8px;
+    max-width: 800px;
+    max-height: 450px;
+    display: block;
+}
+
+form input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#noborder {
+    border: solid 0px;
+}
+
+#index {
+    float: left;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+}
+
+.mlk {
+    float: left;
+}
+
+.mlk:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.mlk button {
+    display: block;
+    color: rgba(255, 128, 0, 1);
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1em;
+    text-align: center;
+    margin: 9px;
+    padding: 14px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .mlk button {
+    background-color:#fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 120px;
+    min-height: 120px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+}
+
+.dropdown-content a {
+    color: rgba(255, 128, 0, 1);
+    padding: 12px 16px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 0.9em;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+
+}
+
+.content {
+    margin-top: 70px;
+}
+
+.center {
+    text-align: center;
+}
+
+.center2 {
+    margin: 4px;
+    padding: 4px;
+    display: block;
+    max-width: 800px;
+    max-height: 450px;
+}
+
+.font {
+    color: #000;
+    font-family: Roboto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.8em;
+}
+
+.img {
+    color: #000;
+}
+
+.title {
+    margin: 8px;
+    padding: 8px;
+    display: block;
+    font-family: Roboto;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 3px 2px 2px rgba(255, 128, 0, 1);
+    color: #FFFFFF;
+    max-width: 800px;
+    max-height: 450px;
+}
+
+.subtitle {
+    margin: 8px;
+    padding: 8px;
+    color: #000000;
+    display: block;
+    font-family: Roboto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 800px;
+    max-height: 450px;
+}
+
+.form {
+    margin: 4px;
+    padding: 4px;
+    display: block;
+    background-color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    border-radius: 4px;
+    border-top: solid 0px;
+    max-width: 800px;
+    max-height: 450px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+.txtarea {
+    margin: 8px;
+    padding: 8px;
+    display: block;
+    font-family: Roboto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.8em;
+    border: 0px solid #FF8000;
+    max-height: 50px;
+    max-width: 800px;
+    resize: none;
+}
+
+.btn {
+    margin: 4px;
+    padding: 4px;
+    font-family: Roboto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    border-radius: 2px;
+    border-top: solid 0px;
+    background-color: #FF8000;
+    color: #fff;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgba(255, 128, 0, 0.8)
+}
+
+h1 {
+    margin: 8px;
+    padding: 8px;
+    color: #000;
+    font-weight: normal;
+    font-style: normal;
+    font-family: Roboto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.lkbtn {
+    color: #ffffff;
+    background-color: #FF8000;
+    margin: auto;
+    padding: 4px;
+    font-family: Roboto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.8em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    border-radius: 2px;
+    border-top: solid 0px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+
+.lkbtn:hover {
+    cursor: pointer;
+    background-color: rgba(255, 128, 0, 0.8)
+}
